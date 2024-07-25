@@ -9,9 +9,6 @@ const handleSubmit = async (e) => {
 
 }
 
-
-
-
 var myUsername = document.getElementById("username");
 var myEmail = document.getElementById("email");
 var myPassword = document.getElementById("password");

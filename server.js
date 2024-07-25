@@ -5,8 +5,7 @@ const bcryptjs = require('bcryptjs')
 const dotenv = require('dotenv')
 const jwt = require('jsonwebtoken')
 const cookieParser = require('cookie-parser');
-// const User = require('./models/user.js')
-
+const Data = require('./models/data.model.js')
 dotenv.config();
 
 const port = 3000
@@ -29,16 +28,6 @@ mongoose.connect(process.env.MONGODB)
 
 
 
-const userSchema = new mongoose.Schema({
-  username: String,
-  email: String,
-  password: String,
-  
-},
-{timestamps: true}
-)
-
-const User = mongoose.model("User", userSchema)
 
 
 
